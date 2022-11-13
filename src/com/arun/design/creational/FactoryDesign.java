@@ -1,7 +1,7 @@
 package com.arun.design.creational;
 
 interface Mobile{
-    void operatingSystem();
+    public void operatingSystem();
 }
 
 class Android implements Mobile{
@@ -32,6 +32,6 @@ class MobileFactory{
 public class FactoryDesign {
     public static void main(String[] args) {
         Mobile mobile= MobileFactory.getInstance("ios");
-       mobile.operatingSystem();
+        System.out.println();
     }
 }
